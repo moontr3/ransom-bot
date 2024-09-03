@@ -71,6 +71,7 @@ async def ping(ctx:commands.Context):
     aliases=['generate'],
     description='Styles your text as a ransom note.'
 )
+@discord.app_commands.user_install()
 @discord.app_commands.describe(
     text='Your text',
     styling='(🔘 - Default) Setup random styling',
